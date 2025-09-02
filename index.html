@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Desarrollador Full Stack</title>
+    
+     Bootstrap CSS 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+     Font Awesome 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+     Google Fonts 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+     Custom CSS 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     Navigation 
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code me-2"></i>Mi Portafolio
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+                
+                <button class="btn btn-outline-light ms-3" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+     Hero Section 
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold mb-4 text-white">
+                            Hola, soy <span class="text-gradient">Tu Nombre</span>
+                        </h1>
+                        <p class="lead mb-4 text-white-50">
+                            Desarrollador Full Stack apasionado por crear experiencias digitales excepcionales
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#projects" class="btn btn-primary btn-lg px-4">
+                                Ver Proyectos
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg px-4">
+                                Contactarme
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <div class="floating-card">
+                            <i class="fas fa-laptop-code fa-8x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         Animated background elements 
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+     About Section 
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title">Sobre Mí</h2>
+                        <p class="text-muted">Conoce más sobre mi experiencia y pasión por el desarrollo</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div class="profile-image-container">
+                        <img src="/placeholder.svg?height=300&width=300" 
+                             alt="Mi foto de perfil" 
+                             class="profile-image img-fluid rounded-circle">
+                        <div class="profile-ring"></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8">
+                    <div class="about-content">
+                        <h3 class="mb-4">Desarrollador Full Stack</h3>
+                        <p class="mb-4">
+                            Soy un desarrollador apasionado con más de X años de experiencia creando 
+                            aplicaciones web modernas y escalables. Me especializo en tecnologías como 
+                            React, Node.js, y bases de datos tanto SQL como NoSQL.
+                        </p>
+                        <p class="mb-4">
+                            Mi enfoque se centra en escribir código limpio, mantenible y eficiente, 
+                            siempre buscando las mejores prácticas y las últimas tendencias en desarrollo web.
+                        </p>
+                        
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="stat-item">
+                                    <h4 class="text-primary mb-1">50+</h4>
+                                    <p class="mb-0 text-muted">Proyectos Completados</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="stat-item">
+                                    <h4 class="text-primary mb-1">3+</h4>
+                                    <p class="mb-0 text-muted">Años de Experiencia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Skills Section 
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title">Habilidades Técnicas</h2>
+                        <p class="text-muted">Tecnologías y herramientas que domino</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                 Frontend Skills 
+                <div class="col-lg-4">
+                    <div class="skill-category">
+                        <h4 class="mb-4 text-center">
+                            <i class="fas fa-palette text-primary me-2"></i>Frontend
+                        </h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-html5 skill-icon"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt skill-icon"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square skill-icon"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react skill-icon"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-vue skill-icon"></i>
+                                <span>Vue.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-bootstrap skill-icon"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 Backend Skills 
+                <div class="col-lg-4">
+                    <div class="skill-category">
+                        <h4 class="mb-4 text-center">
+                            <i class="fas fa-server text-primary me-2"></i>Backend
+                        </h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-node-js skill-icon"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python skill-icon"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database skill-icon"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database skill-icon"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-fire skill-icon"></i>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cloud skill-icon"></i>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 Tools Skills 
+                <div class="col-lg-4">
+                    <div class="skill-category">
+                        <h4 class="mb-4 text-center">
+                            <i class="fas fa-tools text-primary me-2"></i>Herramientas
+                        </h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt skill-icon"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-github skill-icon"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-docker skill-icon"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code-branch skill-icon"></i>
+                                <span>CI/CD</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-terminal skill-icon"></i>
+                                <span>Terminal</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code skill-icon"></i>
+                                <span>VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Projects Section 
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title">Mis Proyectos</h2>
+                        <p class="text-muted">Algunos de los proyectos en los que he trabajado</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                 Project 1 
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card hover-lift">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=250&width=400" 
+                                 alt="Proyecto 1" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">E-commerce Platform</h5>
+                            <p class="project-description">
+                                Plataforma de comercio electrónico completa con React, Node.js y MongoDB.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 Project 2 
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card hover-lift">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=250&width=400" 
+                                 alt="Proyecto 2" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">Task Manager App</h5>
+                            <p class="project-description">
+                                Aplicación de gestión de tareas con funcionalidades avanzadas y colaboración en tiempo real.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Vuetify</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 Project 3 
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card hover-lift">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=250&width=400" 
+                                 alt="Proyecto 3" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">Weather App</h5>
+                            <p class="project-description">
+                                Aplicación del clima con geolocalización y pronósticos detallados.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API REST</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 Project 4 
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card hover-lift">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=250&width=400" 
+                                 alt="Proyecto 4" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">Social Dashboard</h5>
+                            <p class="project-description">
+                                Dashboard de redes sociales con análisis de métricas y visualización de datos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Chart.js</span>
+                                <span class="tech-tag">Express</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 Project 5 
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card hover-lift">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=250&width=400" 
+                                 alt="Proyecto 5" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">Portfolio Website</h5>
+                            <p class="project-description">
+                                Sitio web de portafolio responsivo con animaciones y diseño moderno.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">SCSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 Project 6 
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card hover-lift">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=250&width=400" 
+                                 alt="Proyecto 6" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5 class="project-title">Blog Platform</h5>
+                            <p class="project-description">
+                                Plataforma de blog con CMS personalizado y sistema de comentarios.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Prisma</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Contact Section 
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title">Contactarme</h2>
+                        <p class="text-muted">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                                        <label for="name">Nombre completo</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+                                        <label for="email">Correo electrónico</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Asunto" required>
+                                        <label for="subject">Asunto</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" placeholder="Tu mensaje" style="height: 120px" required></textarea>
+                                        <label for="message">Mensaje</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+             Contact Info 
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="contact-info">
+                        <div class="row g-4 text-center">
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                                    <h5>Email</h5>
+                                    <p class="text-muted">tu@email.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                                    <h5>Teléfono</h5>
+                                    <p class="text-muted">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                                    <h5>Ubicación</h5>
+                                    <p class="text-muted">Tu Ciudad, País</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Footer 
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     Bootstrap JS 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+     Custom JS 
+    <script src="script.js"></script>
+</body>
+</html>
