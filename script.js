@@ -192,7 +192,7 @@ function initTypingEffect() {
   const heroTitle = document.querySelector(".hero-content h1 .text-gradient")
   if (!heroTitle) return
 
-  const texts = ["Tu Nombre", "Desarrollador", "Creador", "Innovador"]
+  const texts = ["Cindy Jimenez", "Desarrolladora", "Creadora", "Innovadora"]
   let textIndex = 0
   let charIndex = 0
   let isDeleting = false
